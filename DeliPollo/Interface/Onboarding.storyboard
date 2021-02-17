@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Blogger_Sans-Bold.otf">
+            <string>BloggerSans-Bold</string>
+        </array>
+        <array key="Blogger_Sans.otf">
+            <string>BloggerSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding Controller-->
+        <scene sceneID="cI3-lO-gQ8">
+            <objects>
+                <pageViewController storyboardIdentifier="OnboardingController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="9JG-bW-UHi" customClass="OnboardingController" customModule="DeliPollo" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mG3-tR-eFW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-320" y="225"/>
+        </scene>
+        <!--Induction Controller-->
+        <scene sceneID="F1I-yv-eVM">
+            <objects>
+                <viewController storyboardIdentifier="InductionController" id="jrk-Vg-CYu" customClass="InductionController" customModule="DeliPollo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qUt-GB-VTL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_background" translatesAutoresizingMaskIntoConstraints="NO" id="eIu-Xc-g7Z">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_lolo_logo" translatesAutoresizingMaskIntoConstraints="NO" id="cb2-5p-8w9">
+                                <rect key="frame" x="67.5" y="48" width="240" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="ZQQ-f2-ypF"/>
+                                    <constraint firstAttribute="width" constant="240" id="r7p-xk-1P8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="título" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTm-9D-axT">
+                                <rect key="frame" x="12" y="204" width="351" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="ze1-9w-iQF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BloggerSans-Bold" family="Blogger Sans" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subtítulo" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZB-I0-M9Z">
+                                <rect key="frame" x="12" y="263" width="351" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="1rk-Pb-P6i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="22"/>
+                                <color key="textColor" name="loloGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="7tU-Pu-qQZ">
+                                <rect key="frame" x="24" y="329" width="327" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oBu-dR-OB9"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" name="loloGray"/>
+                                <color key="currentPageIndicatorTintColor" name="loloBlue"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkK-7A-vga">
+                                <rect key="frame" x="48" y="593" width="279" height="50"/>
+                                <color key="backgroundColor" name="loloBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QOy-PF-xPj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="26"/>
+                                <state key="normal" title="saltar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AnB-Ma-hUf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cb2-5p-8w9" firstAttribute="top" secondItem="AnB-Ma-hUf" secondAttribute="top" constant="48" id="00D-2V-GfI"/>
+                            <constraint firstItem="HZB-I0-M9Z" firstAttribute="top" secondItem="kTm-9D-axT" secondAttribute="bottom" constant="24" id="0vZ-uu-jI1"/>
+                            <constraint firstItem="AnB-Ma-hUf" firstAttribute="trailing" secondItem="xkK-7A-vga" secondAttribute="trailing" constant="48" id="13g-UU-2q0"/>
+                            <constraint firstItem="7tU-Pu-qQZ" firstAttribute="top" secondItem="HZB-I0-M9Z" secondAttribute="bottom" constant="36" id="5Y5-Nd-R8l"/>
+                            <constraint firstItem="AnB-Ma-hUf" firstAttribute="bottom" secondItem="eIu-Xc-g7Z" secondAttribute="bottom" id="6Bf-Eb-0vm"/>
+                            <constraint firstItem="HZB-I0-M9Z" firstAttribute="leading" secondItem="AnB-Ma-hUf" secondAttribute="leading" constant="12" id="6RN-Dt-KWi"/>
+                            <constraint firstItem="kTm-9D-axT" firstAttribute="leading" secondItem="AnB-Ma-hUf" secondAttribute="leading" constant="12" id="90f-zc-ju6"/>
+                            <constraint firstItem="AnB-Ma-hUf" firstAttribute="trailing" secondItem="7tU-Pu-qQZ" secondAttribute="trailing" constant="24" id="AwS-o2-EIF"/>
+                            <constraint firstItem="eIu-Xc-g7Z" firstAttribute="top" secondItem="AnB-Ma-hUf" secondAttribute="top" id="GBO-0y-oDe"/>
+                            <constraint firstItem="cb2-5p-8w9" firstAttribute="centerX" secondItem="qUt-GB-VTL" secondAttribute="centerX" id="IP7-9a-iCV"/>
+                            <constraint firstItem="kTm-9D-axT" firstAttribute="top" secondItem="cb2-5p-8w9" secondAttribute="bottom" constant="36" id="LpH-ff-SsQ"/>
+                            <constraint firstItem="AnB-Ma-hUf" firstAttribute="trailing" secondItem="HZB-I0-M9Z" secondAttribute="trailing" constant="12" id="LyX-VB-ZbV"/>
+                            <constraint firstItem="AnB-Ma-hUf" firstAttribute="trailing" secondItem="kTm-9D-axT" secondAttribute="trailing" constant="12" id="XRe-eL-bcu"/>
+                            <constraint firstItem="eIu-Xc-g7Z" firstAttribute="leading" secondItem="AnB-Ma-hUf" secondAttribute="leading" id="XSY-FP-wjO"/>
+                            <constraint firstItem="7tU-Pu-qQZ" firstAttribute="leading" secondItem="AnB-Ma-hUf" secondAttribute="leading" constant="24" id="cVg-ac-BWV"/>
+                            <constraint firstItem="AnB-Ma-hUf" firstAttribute="bottom" secondItem="xkK-7A-vga" secondAttribute="bottom" constant="24" id="qdC-LW-0fZ"/>
+                            <constraint firstItem="xkK-7A-vga" firstAttribute="leading" secondItem="AnB-Ma-hUf" secondAttribute="leading" constant="48" id="rQ6-aZ-TZJ"/>
+                            <constraint firstItem="AnB-Ma-hUf" firstAttribute="trailing" secondItem="eIu-Xc-g7Z" secondAttribute="trailing" id="zo0-H2-nJo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="xkK-7A-vga" id="5ho-Cw-P05"/>
+                        <outlet property="pageControl" destination="7tU-Pu-qQZ" id="NE7-2J-GOs"/>
+                        <outlet property="subtitleLabel" destination="HZB-I0-M9Z" id="Nnt-6v-FqS"/>
+                        <outlet property="titleLabel" destination="kTm-9D-axT" id="pbg-7c-Re7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n8T-bY-nsB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="343" y="224"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_background" width="728" height="1280"/>
+        <image name="img_lolo_logo" width="848" height="481"/>
+        <namedColor name="loloBlue">
+            <color red="0.28627450980392155" green="0.70196078431372544" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="loloGray">
+            <color red="0.54509803921568623" green="0.54509803921568623" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

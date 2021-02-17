@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Blogger_Sans.otf">
+            <string>BloggerSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryCell" customModule="DeliPollo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iu3-Ih-7L0">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0h8-Nb-cbt">
+                                <rect key="frame" x="6" y="160" width="188" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ycq-Rj-p4o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IUi-J5-Jcc">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="loloBlue"/>
+                        <constraints>
+                            <constraint firstItem="0h8-Nb-cbt" firstAttribute="leading" secondItem="iu3-Ih-7L0" secondAttribute="leading" constant="6" id="EnJ-Al-dMJ"/>
+                            <constraint firstAttribute="trailing" secondItem="0h8-Nb-cbt" secondAttribute="trailing" constant="6" id="PAz-rg-7ev"/>
+                            <constraint firstItem="IUi-J5-Jcc" firstAttribute="leading" secondItem="iu3-Ih-7L0" secondAttribute="leading" id="QoS-wH-tft"/>
+                            <constraint firstItem="IUi-J5-Jcc" firstAttribute="top" secondItem="iu3-Ih-7L0" secondAttribute="top" id="XAm-Me-m8o"/>
+                            <constraint firstAttribute="trailing" secondItem="IUi-J5-Jcc" secondAttribute="trailing" id="dPU-gr-euh"/>
+                            <constraint firstItem="0h8-Nb-cbt" firstAttribute="top" secondItem="IUi-J5-Jcc" secondAttribute="bottom" id="n2x-h3-8Qq"/>
+                            <constraint firstAttribute="bottom" secondItem="0h8-Nb-cbt" secondAttribute="bottom" id="nhg-Vd-Mcs"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="iu3-Ih-7L0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ufu-Pf-Lrd"/>
+                <constraint firstAttribute="trailing" secondItem="iu3-Ih-7L0" secondAttribute="trailing" id="Wru-uJ-qVg"/>
+                <constraint firstItem="iu3-Ih-7L0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="beT-jt-MuJ"/>
+                <constraint firstAttribute="bottom" secondItem="iu3-Ih-7L0" secondAttribute="bottom" id="ymZ-5a-FE0"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="IUi-J5-Jcc" id="UKt-y2-ZHL"/>
+                <outlet property="nameLabel" destination="0h8-Nb-cbt" id="grw-ZW-rdT"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="129.91071428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="loloBlue">
+            <color red="0.28627450980392155" green="0.70196078431372544" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

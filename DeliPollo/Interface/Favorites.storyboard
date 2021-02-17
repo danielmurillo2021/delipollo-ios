@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Blogger_Sans-Bold.otf">
+            <string>BloggerSans-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Favorites Controller-->
+        <scene sceneID="xtc-ba-Qga">
+            <objects>
+                <viewController storyboardIdentifier="FavoritesController" id="eQ0-9G-gty" customClass="FavoritesController" customModule="DeliPollo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oiP-Cl-883">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3r-Ro-ZMb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favoritos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLF-rD-o0o">
+                                        <rect key="frame" x="12" y="12" width="124" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="sYe-IZ-P6P"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans-Bold" family="Blogger Sans" pointSize="30"/>
+                                        <color key="textColor" name="loloGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Pnn-id-Ast">
+                                        <rect key="frame" x="235" y="6" width="128" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quS-Zz-JBx">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="1lD-jx-ScQ"/>
+                                                    <constraint firstAttribute="width" constant="40" id="N9Z-9w-h1A"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_left_arrow"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1H-tT-nBE">
+                                                <rect key="frame" x="44" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="NnT-Q3-bFI"/>
+                                                    <constraint firstAttribute="width" constant="40" id="sbG-16-lga"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_search"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eai-Wg-Eju">
+                                                <rect key="frame" x="88" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="fMB-Rp-Orf"/>
+                                                    <constraint firstAttribute="width" constant="40" id="w1D-jV-U4b"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_account"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Pnn-id-Ast" firstAttribute="top" secondItem="b3r-Ro-ZMb" secondAttribute="top" constant="6" id="4E1-ZP-a41"/>
+                                    <constraint firstItem="iLF-rD-o0o" firstAttribute="top" secondItem="b3r-Ro-ZMb" secondAttribute="top" constant="12" id="5D1-vK-3tJ"/>
+                                    <constraint firstItem="iLF-rD-o0o" firstAttribute="leading" secondItem="b3r-Ro-ZMb" secondAttribute="leading" constant="12" id="FuH-2Y-5dw"/>
+                                    <constraint firstAttribute="height" constant="60" id="ZRV-vo-z6q"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pnn-id-Ast" secondAttribute="trailing" constant="12" id="zuo-w1-dt8"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="17j-15-M6f">
+                                <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gnW-Na-ZbN"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="17j-15-M6f" firstAttribute="leading" secondItem="gnW-Na-ZbN" secondAttribute="leading" id="1OJ-ZT-aXZ"/>
+                            <constraint firstItem="b3r-Ro-ZMb" firstAttribute="top" secondItem="gnW-Na-ZbN" secondAttribute="top" id="1sO-SM-pIj"/>
+                            <constraint firstItem="17j-15-M6f" firstAttribute="top" secondItem="b3r-Ro-ZMb" secondAttribute="bottom" id="MEm-Qe-1lI"/>
+                            <constraint firstItem="b3r-Ro-ZMb" firstAttribute="leading" secondItem="gnW-Na-ZbN" secondAttribute="leading" id="Uz7-ia-99w"/>
+                            <constraint firstItem="gnW-Na-ZbN" firstAttribute="trailing" secondItem="17j-15-M6f" secondAttribute="trailing" id="V6c-my-x1C"/>
+                            <constraint firstItem="gnW-Na-ZbN" firstAttribute="trailing" secondItem="b3r-Ro-ZMb" secondAttribute="trailing" id="jwr-E0-uJd"/>
+                            <constraint firstItem="gnW-Na-ZbN" firstAttribute="bottom" secondItem="17j-15-M6f" secondAttribute="bottom" id="oX3-Cq-xkz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accountButton" destination="eai-Wg-Eju" id="Ps7-HJ-wyg"/>
+                        <outlet property="backButton" destination="quS-Zz-JBx" id="Q9B-da-R2J"/>
+                        <outlet property="searchButton" destination="V1H-tT-nBE" id="BcG-DF-L0D"/>
+                        <outlet property="tableView" destination="17j-15-M6f" id="PIv-cC-liu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gkP-dy-hfw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-434.39999999999998" y="180.35982008995504"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_account" width="126" height="126"/>
+        <image name="ic_left_arrow" width="126" height="126"/>
+        <image name="ic_search" width="24" height="24"/>
+        <namedColor name="loloGray">
+            <color red="0.54509803921568623" green="0.54509803921568623" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

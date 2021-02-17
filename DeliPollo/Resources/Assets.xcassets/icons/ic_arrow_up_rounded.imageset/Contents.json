@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "flecha_arriba.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

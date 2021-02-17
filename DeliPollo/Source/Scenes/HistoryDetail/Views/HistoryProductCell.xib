@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Blogger_Sans-Bold.otf">
+            <string>BloggerSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="KGk-i7-Jjw" customClass="HistoryProductCell" customModule="DeliPollo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5P-N6-Nvc">
+                        <rect key="frame" x="6" y="6" width="308" height="68"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nu4-kV-e0O">
+                                <rect key="frame" x="0.0" y="0.0" width="68" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="gXw-sf-8jV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKh-W1-6Bz">
+                                <rect key="frame" x="277" y="37" width="25" height="25"/>
+                                <color key="backgroundColor" name="loloBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Aho-HU-RHr"/>
+                                    <constraint firstAttribute="width" constant="25" id="Gax-VN-F5D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BloggerSans-Bold" family="Blogger Sans" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nombre" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pne-1V-iW2">
+                                <rect key="frame" x="71" y="6" width="234" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Ali-YD-KLw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BloggerSans-Bold" family="Blogger Sans" pointSize="20"/>
+                                <color key="textColor" name="loloGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nu4-kV-e0O" firstAttribute="leading" secondItem="i5P-N6-Nvc" secondAttribute="leading" id="0pj-xT-Hv7"/>
+                            <constraint firstItem="Pne-1V-iW2" firstAttribute="leading" secondItem="nu4-kV-e0O" secondAttribute="trailing" constant="3" id="1fw-ua-9wl"/>
+                            <constraint firstAttribute="trailing" secondItem="Pne-1V-iW2" secondAttribute="trailing" constant="3" id="8nr-fK-YdG"/>
+                            <constraint firstAttribute="trailing" secondItem="ZKh-W1-6Bz" secondAttribute="trailing" constant="6" id="CjH-6d-3QH"/>
+                            <constraint firstAttribute="bottom" secondItem="ZKh-W1-6Bz" secondAttribute="bottom" constant="6" id="GXB-QI-D0L"/>
+                            <constraint firstItem="nu4-kV-e0O" firstAttribute="top" secondItem="i5P-N6-Nvc" secondAttribute="top" id="VSL-30-rXe"/>
+                            <constraint firstAttribute="bottom" secondItem="nu4-kV-e0O" secondAttribute="bottom" id="XMs-jG-mGD"/>
+                            <constraint firstItem="Pne-1V-iW2" firstAttribute="top" secondItem="i5P-N6-Nvc" secondAttribute="top" constant="6" id="fkd-KA-DB7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="i5P-N6-Nvc" secondAttribute="bottom" constant="6" id="NKH-mY-znS"/>
+                    <constraint firstItem="i5P-N6-Nvc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="Qn0-VW-w6j"/>
+                    <constraint firstAttribute="trailing" secondItem="i5P-N6-Nvc" secondAttribute="trailing" constant="6" id="nhl-bF-GXM"/>
+                    <constraint firstItem="i5P-N6-Nvc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="pBH-E1-dQm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="logoImage" destination="nu4-kV-e0O" id="aLL-uY-Zcc"/>
+                <outlet property="productLabel" destination="Pne-1V-iW2" id="z2z-Ro-g5x"/>
+                <outlet property="qtyLabel" destination="ZKh-W1-6Bz" id="igw-si-VjV"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="62.946428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="loloBlue">
+            <color red="0.28627450980392155" green="0.70196078431372544" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="loloGray">
+            <color red="0.54509803921568623" green="0.54509803921568623" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

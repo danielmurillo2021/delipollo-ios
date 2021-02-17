@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "boton_mas_circular.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

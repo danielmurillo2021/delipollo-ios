@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "check_redondo_deseleccionado.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

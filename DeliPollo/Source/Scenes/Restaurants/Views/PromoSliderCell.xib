@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Blogger_Sans.otf">
+            <string>BloggerSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PromoSliderCell" customModule="DeliPollo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="244" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="244" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tr7-ia-Jci" customClass="FSPagerView" customModule="FSPagerView">
+                        <rect key="frame" x="0.0" y="30" width="244" height="200"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4G-ed-h5q" customClass="FSPageControl" customModule="FSPagerView">
+                        <rect key="frame" x="0.0" y="230" width="244" height="20"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="PuJ-dw-x3X"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="promociones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNs-jz-4Hq">
+                        <rect key="frame" x="6" y="0.0" width="238" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="xhe-EW-UOK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="20"/>
+                        <color key="textColor" name="loloGray"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="tr7-ia-Jci" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BWQ-AD-eGp"/>
+                <constraint firstItem="C4G-ed-h5q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Fs3-RM-Aqt"/>
+                <constraint firstAttribute="trailing" secondItem="C4G-ed-h5q" secondAttribute="trailing" id="Nfg-qL-nLe"/>
+                <constraint firstAttribute="bottom" secondItem="C4G-ed-h5q" secondAttribute="bottom" id="XDO-XV-Cyf"/>
+                <constraint firstAttribute="bottom" secondItem="tr7-ia-Jci" secondAttribute="bottom" constant="20" id="igk-Rw-gXG"/>
+                <constraint firstAttribute="trailing" secondItem="tr7-ia-Jci" secondAttribute="trailing" id="kuO-s4-aKf"/>
+                <constraint firstAttribute="trailing" secondItem="PNs-jz-4Hq" secondAttribute="trailing" id="lju-UI-o38"/>
+                <constraint firstItem="tr7-ia-Jci" firstAttribute="top" secondItem="PNs-jz-4Hq" secondAttribute="bottom" id="nvs-Jx-Gzn"/>
+                <constraint firstItem="PNs-jz-4Hq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pVk-QI-qoh"/>
+                <constraint firstItem="PNs-jz-4Hq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="ysM-9V-be2"/>
+                <constraint firstItem="tr7-ia-Jci" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="zgF-tI-co2"/>
+            </constraints>
+            <size key="customSize" width="244" height="142"/>
+            <connections>
+                <outlet property="pageControl" destination="C4G-ed-h5q" id="4AI-WE-Jd6"/>
+                <outlet property="pagerView" destination="tr7-ia-Jci" id="6BV-lG-gRq"/>
+            </connections>
+            <point key="canvasLocation" x="272.46376811594206" y="184.15178571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="loloGray">
+            <color red="0.54509803921568623" green="0.54509803921568623" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

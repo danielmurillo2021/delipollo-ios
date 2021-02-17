@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Blogger_Sans-Bold.otf">
+            <string>BloggerSans-Bold</string>
+        </array>
+        <array key="Blogger_Sans.otf">
+            <string>BloggerSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Intro Controller-->
+        <scene sceneID="lx2-t0-BQd">
+            <objects>
+                <viewController storyboardIdentifier="IntroController" id="8He-hT-b2Y" customClass="IntroController" customModule="DeliPollo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LGW-qG-eRY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_lolo_logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="YQA-Je-7OG">
+                                <rect key="frame" x="6" y="120" width="363" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="O1D-jW-ML2"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="vWq-e7-UPA">
+                                <rect key="frame" x="36" y="403" width="303" height="204"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMd-8r-tzz">
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="8s7-cW-AsX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="24"/>
+                                        <state key="normal" title="regístrate gratis">
+                                            <color key="titleColor" name="loloBlue"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBT-hi-iJD">
+                                        <rect key="frame" x="0.0" y="72" width="303" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="DEs-W2-mL8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="24"/>
+                                        <state key="normal" title="iniciar sesión">
+                                            <color key="titleColor" name="loloBlue"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGI-N3-Gqm">
+                                        <rect key="frame" x="0.0" y="144" width="303" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="klE-ZH-zJk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="24"/>
+                                        <state key="normal" title="entrar como visitante">
+                                            <color key="titleColor" name="loloBlue"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Jr-ke-Wog"/>
+                        <color key="backgroundColor" name="loloBlue"/>
+                        <constraints>
+                            <constraint firstItem="0Jr-ke-Wog" firstAttribute="trailing" secondItem="vWq-e7-UPA" secondAttribute="trailing" constant="36" id="Cx4-MA-br4"/>
+                            <constraint firstItem="YQA-Je-7OG" firstAttribute="centerX" secondItem="LGW-qG-eRY" secondAttribute="centerX" id="I8S-TL-gEL"/>
+                            <constraint firstAttribute="trailing" secondItem="YQA-Je-7OG" secondAttribute="trailing" constant="6" id="OAE-Rb-eZl"/>
+                            <constraint firstItem="0Jr-ke-Wog" firstAttribute="bottom" secondItem="vWq-e7-UPA" secondAttribute="bottom" constant="60" id="R69-6l-spW"/>
+                            <constraint firstItem="YQA-Je-7OG" firstAttribute="top" secondItem="0Jr-ke-Wog" secondAttribute="top" constant="120" id="Ypc-ye-R91"/>
+                            <constraint firstItem="YQA-Je-7OG" firstAttribute="leading" secondItem="LGW-qG-eRY" secondAttribute="leading" constant="6" id="cda-HB-mNe"/>
+                            <constraint firstItem="vWq-e7-UPA" firstAttribute="leading" secondItem="0Jr-ke-Wog" secondAttribute="leading" constant="36" id="rHg-nV-JjQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="uBT-hi-iJD" id="rCM-Bm-3sM"/>
+                        <outlet property="signinButton" destination="GMd-8r-tzz" id="o2W-TP-yqW"/>
+                        <outlet property="visitorButton" destination="vGI-N3-Gqm" id="S0c-BV-fij"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E2R-iG-Ouy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18" y="190"/>
+        </scene>
+        <!--Signin Controller-->
+        <scene sceneID="Lby-qU-jzh">
+            <objects>
+                <viewController storyboardIdentifier="SigninController" id="SaY-Jf-1e6" customClass="SigninController" customModule="DeliPollo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YJp-i2-E3H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_background" translatesAutoresizingMaskIntoConstraints="NO" id="iRn-Dy-Jj7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ouW-kx-Qwo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_lolo_logo" translatesAutoresizingMaskIntoConstraints="NO" id="BND-53-NbL">
+                                        <rect key="frame" x="67.5" y="60" width="240" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="0TP-qz-pYq"/>
+                                            <constraint firstAttribute="height" constant="120" id="V2C-SA-cGy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KnX-lG-0aR">
+                                        <rect key="frame" x="165" y="204" width="45" height="10"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OfU-CA-IKA">
+                                                <rect key="frame" x="0.0" y="0.0" width="11.5" height="10"/>
+                                                <color key="backgroundColor" name="loloBlue"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QbC-32-wK0">
+                                                <rect key="frame" x="16.5" y="0.0" width="12" height="10"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zoX-Dy-Oqv">
+                                                <rect key="frame" x="33.5" y="0.0" width="11.5" height="10"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="ZRY-bZ-kiH"/>
+                                            <constraint firstAttribute="width" constant="45" id="ZhV-89-NfG"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ingresa tu número" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHy-T5-PoQ">
+                                        <rect key="frame" x="24" y="238" width="327" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="c6B-OW-Yd3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans-Bold" family="Blogger Sans" pointSize="30"/>
+                                        <color key="textColor" name="loloGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXF-FX-OU4">
+                                        <rect key="frame" x="67.5" y="593" width="240" height="50"/>
+                                        <color key="backgroundColor" name="loloBlue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="1TE-ih-bUR"/>
+                                            <constraint firstAttribute="width" constant="240" id="QZL-aS-zoy"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="TLR-0T-xo9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="22"/>
+                                        <state key="normal" title="siguiente">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextButtonTapped:" destination="SaY-Jf-1e6" eventType="touchUpInside" id="73h-vP-ZPN"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="QEA-IO-3Ez">
+                                        <rect key="frame" x="36" y="539" width="303" height="30"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0P-hL-F31" customClass="CheckBox" customModule="DeliPollo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="NRz-oa-nvv"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Hola"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isChecked" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="checkLineWidth">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="containerFillsOnToggleOn" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="estoy de acuerdo con los" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zza-G3-RPj">
+                                                <rect key="frame" x="36" y="0.0" width="136" height="30"/>
+                                                <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="14"/>
+                                                <color key="textColor" name="loloGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUO-Qq-JSQ">
+                                                <rect key="frame" x="178" y="0.0" width="125" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="93y-bc-xJ2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BloggerSans-Bold" family="Blogger Sans" pointSize="12"/>
+                                                <state key="normal" title="términos y condiciones">
+                                                    <color key="titleColor" name="loloGray"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="9Fz-m6-khL"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="para comenzar ingresa tu número de teléfono y te enviaremos un código de validación" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifv-Pf-vk0">
+                                        <rect key="frame" x="12" y="280" width="351" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="F5C-Y0-b1C"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="16"/>
+                                        <color key="textColor" name="loloGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="LfL-qa-GD8">
+                                        <rect key="frame" x="48" y="332" width="279" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bih-lT-S2G">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+505" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYe-9b-Ffs">
+                                                        <rect key="frame" x="8" y="0.0" width="52" height="50"/>
+                                                        <fontDescription key="fontDescription" name="BloggerSans-Bold" family="Blogger Sans" pointSize="20"/>
+                                                        <color key="textColor" name="loloGray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_down" translatesAutoresizingMaskIntoConstraints="NO" id="sje-gd-b3n">
+                                                        <rect key="frame" x="60" y="0.0" width="40" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="8oh-gL-5GM"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="wYe-9b-Ffs" firstAttribute="top" secondItem="bih-lT-S2G" secondAttribute="top" id="0AY-QV-m1F"/>
+                                                    <constraint firstItem="wYe-9b-Ffs" firstAttribute="leading" secondItem="bih-lT-S2G" secondAttribute="leading" constant="8" id="8Bm-zM-CUo"/>
+                                                    <constraint firstAttribute="width" constant="100" id="9gN-Tl-Iaf"/>
+                                                    <constraint firstAttribute="bottom" secondItem="sje-gd-b3n" secondAttribute="bottom" id="AV3-Gq-8m3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="wYe-9b-Ffs" secondAttribute="bottom" id="M4c-Ni-C4W"/>
+                                                    <constraint firstItem="sje-gd-b3n" firstAttribute="leading" secondItem="wYe-9b-Ffs" secondAttribute="trailing" id="gpS-Tp-wbX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sje-gd-b3n" secondAttribute="trailing" id="ss3-R5-4lz"/>
+                                                    <constraint firstItem="sje-gd-b3n" firstAttribute="top" secondItem="bih-lT-S2G" secondAttribute="top" id="zcr-lr-Iz4"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="muL-tf-IKW" customClass="LoloTextField" customModule="DeliPollo" customModuleProvider="target">
+                                                <rect key="frame" x="112" y="0.0" width="167" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLenght">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="EFD-j3-iCz"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ifv-Pf-vk0" firstAttribute="top" secondItem="RHy-T5-PoQ" secondAttribute="bottom" constant="12" id="4VF-E3-HAD"/>
+                                    <constraint firstAttribute="trailing" secondItem="RHy-T5-PoQ" secondAttribute="trailing" constant="24" id="5lx-sT-wbb"/>
+                                    <constraint firstItem="KnX-lG-0aR" firstAttribute="top" secondItem="BND-53-NbL" secondAttribute="bottom" constant="24" id="6uG-wD-2ay"/>
+                                    <constraint firstAttribute="trailing" secondItem="LfL-qa-GD8" secondAttribute="trailing" constant="48" id="6yz-d8-NQu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ifv-Pf-vk0" secondAttribute="trailing" constant="12" id="7lV-UI-wz6"/>
+                                    <constraint firstItem="LfL-qa-GD8" firstAttribute="leading" secondItem="ouW-kx-Qwo" secondAttribute="leading" constant="48" id="7rt-Fx-rbr"/>
+                                    <constraint firstItem="BND-53-NbL" firstAttribute="centerX" secondItem="ouW-kx-Qwo" secondAttribute="centerX" id="907-hE-vBT"/>
+                                    <constraint firstItem="UXF-FX-OU4" firstAttribute="top" secondItem="QEA-IO-3Ez" secondAttribute="bottom" constant="24" id="EO3-YK-qa7"/>
+                                    <constraint firstItem="KnX-lG-0aR" firstAttribute="centerX" secondItem="ouW-kx-Qwo" secondAttribute="centerX" id="EbC-hl-fTZ"/>
+                                    <constraint firstItem="Ifv-Pf-vk0" firstAttribute="leading" secondItem="ouW-kx-Qwo" secondAttribute="leading" constant="12" id="Fxq-d6-bJf"/>
+                                    <constraint firstItem="RHy-T5-PoQ" firstAttribute="leading" secondItem="ouW-kx-Qwo" secondAttribute="leading" constant="24" id="SSA-sM-dgI"/>
+                                    <constraint firstAttribute="trailing" secondItem="QEA-IO-3Ez" secondAttribute="trailing" constant="36" id="Te9-GX-xbg"/>
+                                    <constraint firstItem="RHy-T5-PoQ" firstAttribute="top" secondItem="KnX-lG-0aR" secondAttribute="bottom" constant="24" id="XXA-j1-qZc"/>
+                                    <constraint firstItem="UXF-FX-OU4" firstAttribute="centerX" secondItem="ouW-kx-Qwo" secondAttribute="centerX" id="cuj-e0-Y3N"/>
+                                    <constraint firstItem="QEA-IO-3Ez" firstAttribute="leading" secondItem="ouW-kx-Qwo" secondAttribute="leading" constant="36" id="ir6-Sd-ddZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="UXF-FX-OU4" secondAttribute="bottom" constant="24" id="jeH-0v-gqj"/>
+                                    <constraint firstItem="LfL-qa-GD8" firstAttribute="top" secondItem="Ifv-Pf-vk0" secondAttribute="bottom" constant="12" id="nRu-yl-EFy"/>
+                                    <constraint firstItem="BND-53-NbL" firstAttribute="top" secondItem="ouW-kx-Qwo" secondAttribute="top" constant="60" id="zAa-Nw-lTK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GKA-jd-CHZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iRn-Dy-Jj7" firstAttribute="top" secondItem="YJp-i2-E3H" secondAttribute="top" id="Ejp-zK-IMI"/>
+                            <constraint firstAttribute="bottom" secondItem="iRn-Dy-Jj7" secondAttribute="bottom" id="Lhb-eQ-AXm"/>
+                            <constraint firstItem="GKA-jd-CHZ" firstAttribute="trailing" secondItem="ouW-kx-Qwo" secondAttribute="trailing" id="Zqp-7W-fBA"/>
+                            <constraint firstItem="ouW-kx-Qwo" firstAttribute="leading" secondItem="GKA-jd-CHZ" secondAttribute="leading" id="anM-po-Bhn"/>
+                            <constraint firstItem="GKA-jd-CHZ" firstAttribute="trailing" secondItem="iRn-Dy-Jj7" secondAttribute="trailing" id="fBc-PN-4xR"/>
+                            <constraint firstItem="ouW-kx-Qwo" firstAttribute="top" secondItem="GKA-jd-CHZ" secondAttribute="top" id="mo9-l1-1ek"/>
+                            <constraint firstItem="iRn-Dy-Jj7" firstAttribute="leading" secondItem="GKA-jd-CHZ" secondAttribute="leading" id="vWE-B4-wHg"/>
+                            <constraint firstItem="GKA-jd-CHZ" firstAttribute="bottom" secondItem="ouW-kx-Qwo" secondAttribute="bottom" id="wdo-s5-D4e"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="numberTextField" destination="muL-tf-IKW" id="Hoq-pU-Axj"/>
+                        <outlet property="termsCheckBox" destination="o0P-hL-F31" id="Zhk-FD-qQ8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hd7-bV-DEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645.60000000000002" y="188.45577211394306"/>
+        </scene>
+        <!--Verify Code Controller-->
+        <scene sceneID="NKo-1D-QFA">
+            <objects>
+                <viewController storyboardIdentifier="VerifyCodeController" id="gB9-D7-zwh" customClass="VerifyCodeController" customModule="DeliPollo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NVe-mt-mDV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_background" translatesAutoresizingMaskIntoConstraints="NO" id="NRX-PK-cCQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TeM-rM-v9I">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_lolo_logo" translatesAutoresizingMaskIntoConstraints="NO" id="NVL-he-eSJ">
+                                        <rect key="frame" x="67.5" y="60" width="240" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="a5K-Hy-4KM"/>
+                                            <constraint firstAttribute="height" constant="120" id="ffD-TB-nCk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8eG-Oh-ULx">
+                                        <rect key="frame" x="165" y="204" width="45" height="10"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zYm-NM-gXc">
+                                                <rect key="frame" x="0.0" y="0.0" width="11.5" height="10"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qlV-r6-It8">
+                                                <rect key="frame" x="16.5" y="0.0" width="12" height="10"/>
+                                                <color key="backgroundColor" name="loloBlue"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Apg-1b-HMN">
+                                                <rect key="frame" x="33.5" y="0.0" width="11.5" height="10"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="XVv-Vq-2dq"/>
+                                            <constraint firstAttribute="height" constant="10" id="uif-Rl-NAA"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="verifica tu número" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2g-HJ-f27">
+                                        <rect key="frame" x="24" y="238" width="327" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="QWj-Vd-wyc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans-Bold" family="Blogger Sans" pointSize="30"/>
+                                        <color key="textColor" name="loloGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0u-ab-e37">
+                                        <rect key="frame" x="67.5" y="593" width="240" height="50"/>
+                                        <color key="backgroundColor" name="loloBlue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="6IW-qE-hKn"/>
+                                            <constraint firstAttribute="width" constant="240" id="bpF-oa-AhP"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="gLS-dp-n8B"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="22"/>
+                                        <state key="normal" title="siguiente">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextButtonTapped:" destination="gB9-D7-zwh" eventType="touchUpInside" id="08k-p7-qey"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Cyw-7J-nrS">
+                                        <rect key="frame" x="36" y="539" width="303" height="30"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wxS-cR-Izv" customClass="CheckBox" customModule="DeliPollo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="4Pd-gt-K15"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Hola"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isChecked" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="checkLineWidth">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="containerFillsOnToggleOn" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="estoy de acuerdo con los" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4G-wv-n0g">
+                                                <rect key="frame" x="36" y="0.0" width="136" height="30"/>
+                                                <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="14"/>
+                                                <color key="textColor" name="loloGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2l-GW-nKp">
+                                                <rect key="frame" x="178" y="0.0" width="125" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="ZwM-KS-UOn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BloggerSans-Bold" family="Blogger Sans" pointSize="12"/>
+                                                <state key="normal" title="términos y condiciones">
+                                                    <color key="titleColor" name="loloGray"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="3Ja-8i-zEd"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ingresa el código que enviamos a: " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="521-vB-rQH">
+                                        <rect key="frame" x="24" y="280" width="327" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Uup-MC-q5W"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="16"/>
+                                        <color key="textColor" name="loloGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+50500000000" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gj-uU-zkO">
+                                        <rect key="frame" x="12" y="310" width="351" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="D1U-8d-fGE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="16"/>
+                                        <color key="textColor" name="loloGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FBh-sy-D7k" customClass="LoloTextField" customModule="DeliPollo" customModuleProvider="target">
+                                        <rect key="frame" x="117.5" y="352" width="140" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="RAO-za-bCU"/>
+                                            <constraint firstAttribute="height" constant="50" id="SXu-tb-tfZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="el código puede tardar algunos minutos en llegar" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwZ-xg-NlH">
+                                        <rect key="frame" x="12" y="414" width="351" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="f6B-Mw-aPo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="16"/>
+                                        <color key="textColor" name="loloGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿no has recibido tu código?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsS-Ot-7HY">
+                                        <rect key="frame" x="12" y="456" width="351" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="V7R-dk-u1q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="16"/>
+                                        <color key="textColor" name="loloGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTC-K9-V0B">
+                                        <rect key="frame" x="12" y="486" width="351" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="yzh-JA-Jh1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans-Bold" family="Blogger Sans" pointSize="16"/>
+                                        <state key="normal" title="reenviar código">
+                                            <color key="titleColor" name="loloGray"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="FsS-Ot-7HY" secondAttribute="trailing" constant="12" id="2Jl-oP-4vw"/>
+                                    <constraint firstItem="nTC-K9-V0B" firstAttribute="top" secondItem="FsS-Ot-7HY" secondAttribute="bottom" id="4bM-wS-dvj"/>
+                                    <constraint firstItem="8eG-Oh-ULx" firstAttribute="top" secondItem="NVL-he-eSJ" secondAttribute="bottom" constant="24" id="6Ls-Vk-jgS"/>
+                                    <constraint firstItem="NVL-he-eSJ" firstAttribute="top" secondItem="TeM-rM-v9I" secondAttribute="top" constant="60" id="7sN-fR-7Ku"/>
+                                    <constraint firstItem="FBh-sy-D7k" firstAttribute="centerX" secondItem="TeM-rM-v9I" secondAttribute="centerX" id="8bN-Sg-QjL"/>
+                                    <constraint firstItem="FsS-Ot-7HY" firstAttribute="top" secondItem="UwZ-xg-NlH" secondAttribute="bottom" constant="12" id="8bb-JR-hcO"/>
+                                    <constraint firstItem="521-vB-rQH" firstAttribute="top" secondItem="x2g-HJ-f27" secondAttribute="bottom" constant="12" id="9uC-Gp-Xqa"/>
+                                    <constraint firstItem="Cyw-7J-nrS" firstAttribute="leading" secondItem="TeM-rM-v9I" secondAttribute="leading" constant="36" id="AXA-cb-vBa"/>
+                                    <constraint firstItem="FBh-sy-D7k" firstAttribute="top" secondItem="7gj-uU-zkO" secondAttribute="bottom" constant="12" id="Ab3-zh-3qj"/>
+                                    <constraint firstItem="x2g-HJ-f27" firstAttribute="top" secondItem="8eG-Oh-ULx" secondAttribute="bottom" constant="24" id="EVl-Sc-2fg"/>
+                                    <constraint firstAttribute="trailing" secondItem="UwZ-xg-NlH" secondAttribute="trailing" constant="12" id="Gwf-Wo-ZqZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cyw-7J-nrS" secondAttribute="trailing" constant="36" id="Inc-ax-7jb"/>
+                                    <constraint firstItem="7gj-uU-zkO" firstAttribute="leading" secondItem="TeM-rM-v9I" secondAttribute="leading" constant="12" id="KJf-zE-pGw"/>
+                                    <constraint firstItem="UwZ-xg-NlH" firstAttribute="leading" secondItem="TeM-rM-v9I" secondAttribute="leading" constant="12" id="KnH-yD-Pmv"/>
+                                    <constraint firstItem="NVL-he-eSJ" firstAttribute="centerX" secondItem="TeM-rM-v9I" secondAttribute="centerX" id="QAd-rg-Qav"/>
+                                    <constraint firstAttribute="trailing" secondItem="x2g-HJ-f27" secondAttribute="trailing" constant="24" id="QwV-8y-G4j"/>
+                                    <constraint firstItem="521-vB-rQH" firstAttribute="leading" secondItem="TeM-rM-v9I" secondAttribute="leading" constant="24" id="RAg-r6-du8"/>
+                                    <constraint firstAttribute="trailing" secondItem="nTC-K9-V0B" secondAttribute="trailing" constant="12" id="SrD-im-wo9"/>
+                                    <constraint firstItem="R0u-ab-e37" firstAttribute="centerX" secondItem="TeM-rM-v9I" secondAttribute="centerX" id="XBg-87-VbK"/>
+                                    <constraint firstItem="UwZ-xg-NlH" firstAttribute="top" secondItem="FBh-sy-D7k" secondAttribute="bottom" constant="12" id="bq3-4c-Z4b"/>
+                                    <constraint firstItem="7gj-uU-zkO" firstAttribute="top" secondItem="521-vB-rQH" secondAttribute="bottom" id="dUs-tw-EBl"/>
+                                    <constraint firstItem="x2g-HJ-f27" firstAttribute="leading" secondItem="TeM-rM-v9I" secondAttribute="leading" constant="24" id="hJ1-AV-CeO"/>
+                                    <constraint firstAttribute="bottom" secondItem="R0u-ab-e37" secondAttribute="bottom" constant="24" id="iqt-GC-LNe"/>
+                                    <constraint firstItem="R0u-ab-e37" firstAttribute="top" secondItem="Cyw-7J-nrS" secondAttribute="bottom" constant="24" id="lCy-37-dOp"/>
+                                    <constraint firstAttribute="trailing" secondItem="521-vB-rQH" secondAttribute="trailing" constant="24" id="nSI-pG-Aes"/>
+                                    <constraint firstItem="nTC-K9-V0B" firstAttribute="leading" secondItem="TeM-rM-v9I" secondAttribute="leading" constant="12" id="nq2-uU-S9P"/>
+                                    <constraint firstAttribute="trailing" secondItem="7gj-uU-zkO" secondAttribute="trailing" constant="12" id="rPX-Jq-fAV"/>
+                                    <constraint firstItem="FsS-Ot-7HY" firstAttribute="leading" secondItem="TeM-rM-v9I" secondAttribute="leading" constant="12" id="ujm-Pv-gfb"/>
+                                    <constraint firstItem="8eG-Oh-ULx" firstAttribute="centerX" secondItem="TeM-rM-v9I" secondAttribute="centerX" id="yzh-ng-pkr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mzv-pg-C54"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mzv-pg-C54" firstAttribute="bottom" secondItem="TeM-rM-v9I" secondAttribute="bottom" id="2tz-Tx-1OD"/>
+                            <constraint firstItem="mzv-pg-C54" firstAttribute="trailing" secondItem="NRX-PK-cCQ" secondAttribute="trailing" id="YDI-u1-tuI"/>
+                            <constraint firstItem="TeM-rM-v9I" firstAttribute="leading" secondItem="mzv-pg-C54" secondAttribute="leading" id="Zbs-1w-KtD"/>
+                            <constraint firstItem="NRX-PK-cCQ" firstAttribute="leading" secondItem="mzv-pg-C54" secondAttribute="leading" id="ciM-Ux-lO4"/>
+                            <constraint firstItem="NRX-PK-cCQ" firstAttribute="top" secondItem="NVe-mt-mDV" secondAttribute="top" id="g4v-pd-l14"/>
+                            <constraint firstItem="mzv-pg-C54" firstAttribute="trailing" secondItem="TeM-rM-v9I" secondAttribute="trailing" id="gIN-GJ-MOa"/>
+                            <constraint firstAttribute="bottom" secondItem="NRX-PK-cCQ" secondAttribute="bottom" id="jk5-vF-W7K"/>
+                            <constraint firstItem="TeM-rM-v9I" firstAttribute="top" secondItem="mzv-pg-C54" secondAttribute="top" id="rzi-SN-GCz"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="codeTextField" destination="FBh-sy-D7k" id="iQy-WK-VC0"/>
+                        <outlet property="numberLabel" destination="7gj-uU-zkO" id="BT7-5u-kWT"/>
+                        <outlet property="termsCheckBox" destination="wxS-cR-Izv" id="tvn-q9-0c6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HgQ-ZT-yry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1294" y="188"/>
+        </scene>
+        <!--Complete Profile Controller-->
+        <scene sceneID="6XJ-2Z-wbb">
+            <objects>
+                <viewController storyboardIdentifier="CompleteProfileController" id="9ws-Bz-4C6" customClass="CompleteProfileController" customModule="DeliPollo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7CC-24-Wrr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_background" translatesAutoresizingMaskIntoConstraints="NO" id="5fw-R3-5Yu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dpr-0j-p3e">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_lolo_logo" translatesAutoresizingMaskIntoConstraints="NO" id="xvk-Ag-ZGI">
+                                        <rect key="frame" x="67.5" y="36" width="240" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="TG1-ap-anT"/>
+                                            <constraint firstAttribute="height" constant="120" id="fXD-LW-pn9"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zko-qO-7nB">
+                                        <rect key="frame" x="165" y="180" width="45" height="10"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8E2-43-iLZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="11.5" height="10"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNS-ja-zPe">
+                                                <rect key="frame" x="16.5" y="0.0" width="12" height="10"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaa-IC-NYz">
+                                                <rect key="frame" x="33.5" y="0.0" width="11.5" height="10"/>
+                                                <color key="backgroundColor" name="loloBlue"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="DnU-hZ-vEH"/>
+                                            <constraint firstAttribute="height" constant="10" id="VQF-47-MZy"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ingresa tus datos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zV-0o-vgm">
+                                        <rect key="frame" x="24" y="214" width="327" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="kfi-fi-VKx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans-Bold" family="Blogger Sans" pointSize="30"/>
+                                        <color key="textColor" name="loloGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqx-i3-uPA">
+                                        <rect key="frame" x="67.5" y="593" width="240" height="50"/>
+                                        <color key="backgroundColor" name="loloBlue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="17y-EN-4Uw"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="boO-bV-EBW"/>
+                                            <constraint firstAttribute="width" constant="240" id="yn3-cS-l31"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="22"/>
+                                        <state key="normal" title="siguiente">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextButtonTapped:" destination="9ws-Bz-4C6" eventType="touchUpInside" id="laV-y9-Uv2"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="por favor, completa la siguiente información" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKr-2x-D9F">
+                                        <rect key="frame" x="12" y="256" width="351" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="zXG-Y2-VMM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="16"/>
+                                        <color key="textColor" name="loloGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Qfl-FJ-ayB">
+                                        <rect key="frame" x="24" y="298" width="327" height="130"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="NsY-AA-qEv">
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="62"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="55m-IM-VTm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="160.5" height="62"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OH1-DV-w7e">
+                                                                <rect key="frame" x="0.0" y="0.0" width="160.5" height="19"/>
+                                                                <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="16"/>
+                                                                <color key="textColor" name="loloGray"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4dZ-6H-SRb" customClass="LoloTextField" customModule="DeliPollo" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="22" width="160.5" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="vKI-am-MGw"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="yoi-pw-jD3">
+                                                        <rect key="frame" x="166.5" y="0.0" width="160.5" height="62"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="apellido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAn-1l-9Zq">
+                                                                <rect key="frame" x="0.0" y="0.0" width="160.5" height="19"/>
+                                                                <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="16"/>
+                                                                <color key="textColor" name="loloGray"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jLq-7d-Eyx" customClass="LoloTextField" customModule="DeliPollo" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="22" width="160.5" height="40"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="pDc-Kb-WJT">
+                                                <rect key="frame" x="0.0" y="68" width="327" height="62"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIq-9x-qCP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="19"/>
+                                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="16"/>
+                                                        <color key="textColor" name="loloGray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SsN-vT-5dT" customClass="LoloTextField" customModule="DeliPollo" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="22" width="327" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="bIB-Hx-WME"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="7vY-iW-By3">
+                                        <rect key="frame" x="48" y="440" width="279" height="136"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pin de seguridad" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGZ-Pl-6Sv">
+                                                <rect key="frame" x="0.0" y="0.0" width="279" height="19"/>
+                                                <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="16"/>
+                                                <color key="textColor" name="loloGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IN7-iU-z8P" customClass="LoloCodeInsertView" customModule="DeliPollo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="25" width="279" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="TY1-Id-uY1"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="confirmar pin de seguridad" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pyp-wN-KKH">
+                                                <rect key="frame" x="0.0" y="71" width="279" height="19"/>
+                                                <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="16"/>
+                                                <color key="textColor" name="loloGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xRh-6t-joQ" customClass="LoloCodeInsertView" customModule="DeliPollo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="96" width="279" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="CDE-3d-8wx"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Qfl-FJ-ayB" firstAttribute="leading" secondItem="Dpr-0j-p3e" secondAttribute="leading" constant="24" id="CED-rC-cqB"/>
+                                    <constraint firstAttribute="trailing" secondItem="gKr-2x-D9F" secondAttribute="trailing" constant="12" id="LbR-D3-cAM"/>
+                                    <constraint firstItem="zko-qO-7nB" firstAttribute="centerX" secondItem="Dpr-0j-p3e" secondAttribute="centerX" id="Scd-W1-WW4"/>
+                                    <constraint firstItem="xvk-Ag-ZGI" firstAttribute="centerX" secondItem="Dpr-0j-p3e" secondAttribute="centerX" id="TuQ-zp-XzJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="1zV-0o-vgm" secondAttribute="trailing" constant="24" id="V0c-35-CTY"/>
+                                    <constraint firstItem="7vY-iW-By3" firstAttribute="top" secondItem="Qfl-FJ-ayB" secondAttribute="bottom" constant="12" id="Xcn-h6-Qgk"/>
+                                    <constraint firstItem="gKr-2x-D9F" firstAttribute="leading" secondItem="Dpr-0j-p3e" secondAttribute="leading" constant="12" id="Yf7-dh-yFD"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qfl-FJ-ayB" secondAttribute="trailing" constant="24" id="aHH-WZ-cPD"/>
+                                    <constraint firstItem="zko-qO-7nB" firstAttribute="top" secondItem="xvk-Ag-ZGI" secondAttribute="bottom" constant="24" id="bYG-nx-CHq"/>
+                                    <constraint firstItem="Qfl-FJ-ayB" firstAttribute="top" secondItem="gKr-2x-D9F" secondAttribute="bottom" constant="12" id="bph-DS-Ah7"/>
+                                    <constraint firstItem="1zV-0o-vgm" firstAttribute="top" secondItem="zko-qO-7nB" secondAttribute="bottom" constant="24" id="cFS-8c-7GU"/>
+                                    <constraint firstItem="7vY-iW-By3" firstAttribute="leading" secondItem="Dpr-0j-p3e" secondAttribute="leading" constant="48" id="jtd-Es-5uZ"/>
+                                    <constraint firstItem="gKr-2x-D9F" firstAttribute="top" secondItem="1zV-0o-vgm" secondAttribute="bottom" constant="12" id="lEx-Rc-nKy"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nqx-i3-uPA" secondAttribute="bottom" constant="24" id="mfg-CE-yJM"/>
+                                    <constraint firstItem="Nqx-i3-uPA" firstAttribute="centerX" secondItem="Dpr-0j-p3e" secondAttribute="centerX" id="rZa-tP-3j0"/>
+                                    <constraint firstItem="1zV-0o-vgm" firstAttribute="leading" secondItem="Dpr-0j-p3e" secondAttribute="leading" constant="24" id="szS-7X-QVx"/>
+                                    <constraint firstItem="xvk-Ag-ZGI" firstAttribute="top" secondItem="Dpr-0j-p3e" secondAttribute="top" constant="36" id="ttQ-K6-qhe"/>
+                                    <constraint firstAttribute="trailing" secondItem="7vY-iW-By3" secondAttribute="trailing" constant="48" id="ve6-Kw-SgH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HiM-6m-Fdx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HiM-6m-Fdx" firstAttribute="trailing" secondItem="5fw-R3-5Yu" secondAttribute="trailing" id="1W2-zX-Uan"/>
+                            <constraint firstItem="HiM-6m-Fdx" firstAttribute="trailing" secondItem="Dpr-0j-p3e" secondAttribute="trailing" id="5To-fe-W8Z"/>
+                            <constraint firstItem="5fw-R3-5Yu" firstAttribute="leading" secondItem="HiM-6m-Fdx" secondAttribute="leading" id="J9y-th-f2q"/>
+                            <constraint firstItem="HiM-6m-Fdx" firstAttribute="bottom" secondItem="Dpr-0j-p3e" secondAttribute="bottom" id="Qe2-Sc-5mK"/>
+                            <constraint firstItem="5fw-R3-5Yu" firstAttribute="top" secondItem="7CC-24-Wrr" secondAttribute="top" id="UmI-Pg-JtT"/>
+                            <constraint firstItem="Dpr-0j-p3e" firstAttribute="leading" secondItem="HiM-6m-Fdx" secondAttribute="leading" id="Ziu-TH-wCD"/>
+                            <constraint firstItem="Dpr-0j-p3e" firstAttribute="top" secondItem="HiM-6m-Fdx" secondAttribute="top" id="bqo-Wc-tvz"/>
+                            <constraint firstAttribute="bottom" secondItem="5fw-R3-5Yu" secondAttribute="bottom" id="lgp-GU-RzC"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="confirmPinView" destination="xRh-6t-joQ" id="7eX-ZH-Bul"/>
+                        <outlet property="emailTextField" destination="SsN-vT-5dT" id="44e-Iw-sa0"/>
+                        <outlet property="lastnameTextField" destination="jLq-7d-Eyx" id="eGu-eH-1JO"/>
+                        <outlet property="nameTextField" destination="4dZ-6H-SRb" id="2dX-cz-e6k"/>
+                        <outlet property="pinView" destination="IN7-iU-z8P" id="V5c-vu-n2b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hak-G4-43b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.5999999999999" y="187.55622188905548"/>
+        </scene>
+        <!--Login Controller-->
+        <scene sceneID="d5e-Wp-kST">
+            <objects>
+                <viewController storyboardIdentifier="LoginController" id="YuC-NA-yWz" customClass="LoginController" customModule="DeliPollo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7yR-F8-04x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_background" translatesAutoresizingMaskIntoConstraints="NO" id="CEJ-Dw-mhU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyS-FM-d4I">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_lolo_logo" translatesAutoresizingMaskIntoConstraints="NO" id="VVc-W5-PI2">
+                                        <rect key="frame" x="67.5" y="60" width="240" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="Teg-id-nz5"/>
+                                            <constraint firstAttribute="height" constant="120" id="lI3-xH-xtb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iniciar sesión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3m-IF-V1T">
+                                        <rect key="frame" x="24" y="216" width="327" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="auO-8A-PER"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans-Bold" family="Blogger Sans" pointSize="30"/>
+                                        <color key="textColor" name="loloGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77Q-KH-zCT">
+                                        <rect key="frame" x="67.5" y="593" width="240" height="50"/>
+                                        <color key="backgroundColor" name="loloBlue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="9PJ-SU-baf"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="KJC-7g-xxg"/>
+                                            <constraint firstAttribute="width" constant="240" id="OE7-kG-hEU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="22"/>
+                                        <state key="normal" title="entrar">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonTapped:" destination="YuC-NA-yWz" eventType="touchUpInside" id="D5c-pT-Xmf"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="para iniciar sesión ingresa tu teléfono y pin de seguridad" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wq-y4-YBa">
+                                        <rect key="frame" x="12" y="258" width="351" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="k39-AY-ogq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="16"/>
+                                        <color key="textColor" name="loloGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="2YY-n9-m2d">
+                                        <rect key="frame" x="48" y="310" width="279" height="124"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="hO0-pe-IWF">
+                                                <rect key="frame" x="0.0" y="0.0" width="279" height="40"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6S7-Mo-PXr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+505" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Be-ta-O5G">
+                                                                <rect key="frame" x="8" y="0.0" width="52" height="50"/>
+                                                                <fontDescription key="fontDescription" name="BloggerSans-Bold" family="Blogger Sans" pointSize="20"/>
+                                                                <color key="textColor" name="loloGray"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_down" translatesAutoresizingMaskIntoConstraints="NO" id="EPL-dl-dd5">
+                                                                <rect key="frame" x="60" y="0.0" width="40" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="40" id="Qa1-jW-b3S"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="EPL-dl-dd5" secondAttribute="bottom" id="009-uW-Ttb"/>
+                                                            <constraint firstAttribute="width" constant="100" id="32s-S3-vJ9"/>
+                                                            <constraint firstItem="3Be-ta-O5G" firstAttribute="leading" secondItem="6S7-Mo-PXr" secondAttribute="leading" constant="8" id="ED1-g4-vZL"/>
+                                                            <constraint firstItem="EPL-dl-dd5" firstAttribute="leading" secondItem="3Be-ta-O5G" secondAttribute="trailing" id="Ldt-yg-hjO"/>
+                                                            <constraint firstAttribute="trailing" secondItem="EPL-dl-dd5" secondAttribute="trailing" id="LrU-eE-I4p"/>
+                                                            <constraint firstAttribute="bottom" secondItem="3Be-ta-O5G" secondAttribute="bottom" id="RLR-1O-Wdn"/>
+                                                            <constraint firstItem="EPL-dl-dd5" firstAttribute="top" secondItem="6S7-Mo-PXr" secondAttribute="top" id="kHc-cn-lf9"/>
+                                                            <constraint firstItem="3Be-ta-O5G" firstAttribute="top" secondItem="6S7-Mo-PXr" secondAttribute="top" id="oMt-1A-jz0"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2O8-tX-c04" customClass="LoloTextField" customModule="DeliPollo" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="279" height="40"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLenght">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="mf1-fQ-aGr"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="subviews">
+                                                        <exclude reference="6S7-Mo-PXr"/>
+                                                    </mask>
+                                                </variation>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pin de seguridad" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuZ-wo-p6G">
+                                                <rect key="frame" x="0.0" y="52" width="279" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="vok-GC-SQI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BloggerSans" family="Blogger Sans" pointSize="16"/>
+                                                <color key="textColor" name="loloGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VfJ-W4-E85" customClass="LoloCodeInsertView" customModule="DeliPollo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="84" width="279" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="dWD-69-541"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="2wq-y4-YBa" firstAttribute="leading" secondItem="pyS-FM-d4I" secondAttribute="leading" constant="12" id="4gt-cf-gCG"/>
+                                    <constraint firstAttribute="trailing" secondItem="2wq-y4-YBa" secondAttribute="trailing" constant="12" id="6yw-8A-OwZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="b3m-IF-V1T" secondAttribute="trailing" constant="24" id="GKM-Jz-GfZ"/>
+                                    <constraint firstItem="2YY-n9-m2d" firstAttribute="leading" secondItem="pyS-FM-d4I" secondAttribute="leading" constant="48" id="Hjl-Os-lBf"/>
+                                    <constraint firstItem="VVc-W5-PI2" firstAttribute="top" secondItem="pyS-FM-d4I" secondAttribute="top" constant="60" id="Hnw-uG-657"/>
+                                    <constraint firstAttribute="bottom" secondItem="77Q-KH-zCT" secondAttribute="bottom" constant="24" id="ILJ-Mx-GgM"/>
+                                    <constraint firstItem="b3m-IF-V1T" firstAttribute="top" secondItem="VVc-W5-PI2" secondAttribute="bottom" constant="36" id="Lx5-I1-QTj"/>
+                                    <constraint firstItem="2wq-y4-YBa" firstAttribute="top" secondItem="b3m-IF-V1T" secondAttribute="bottom" constant="12" id="eFO-dI-uvX"/>
+                                    <constraint firstAttribute="trailing" secondItem="2YY-n9-m2d" secondAttribute="trailing" constant="48" id="hW1-Zk-GfO"/>
+                                    <constraint firstItem="77Q-KH-zCT" firstAttribute="centerX" secondItem="pyS-FM-d4I" secondAttribute="centerX" id="ha6-Bp-6Iw"/>
+                                    <constraint firstItem="VVc-W5-PI2" firstAttribute="centerX" secondItem="pyS-FM-d4I" secondAttribute="centerX" id="iFf-WL-s5X"/>
+                                    <constraint firstItem="2YY-n9-m2d" firstAttribute="top" secondItem="2wq-y4-YBa" secondAttribute="bottom" constant="12" id="nI8-Nn-Qq6"/>
+                                    <constraint firstItem="b3m-IF-V1T" firstAttribute="leading" secondItem="pyS-FM-d4I" secondAttribute="leading" constant="24" id="sbi-6U-tBG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kzs-Eg-MFa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kzs-Eg-MFa" firstAttribute="trailing" secondItem="pyS-FM-d4I" secondAttribute="trailing" id="Asa-Uj-MtS"/>
+                            <constraint firstItem="pyS-FM-d4I" firstAttribute="top" secondItem="Kzs-Eg-MFa" secondAttribute="top" id="FEe-CO-f0u"/>
+                            <constraint firstItem="CEJ-Dw-mhU" firstAttribute="top" secondItem="7yR-F8-04x" secondAttribute="top" id="Sre-MS-vF8"/>
+                            <constraint firstItem="Kzs-Eg-MFa" firstAttribute="bottom" secondItem="pyS-FM-d4I" secondAttribute="bottom" id="U6Y-8T-WFQ"/>
+                            <constraint firstItem="CEJ-Dw-mhU" firstAttribute="leading" secondItem="Kzs-Eg-MFa" secondAttribute="leading" id="XH4-B1-Eze"/>
+                            <constraint firstAttribute="bottom" secondItem="CEJ-Dw-mhU" secondAttribute="bottom" id="Yqo-pW-zGM"/>
+                            <constraint firstItem="Kzs-Eg-MFa" firstAttribute="trailing" secondItem="CEJ-Dw-mhU" secondAttribute="trailing" id="bQT-97-fJw"/>
+                            <constraint firstItem="pyS-FM-d4I" firstAttribute="leading" secondItem="Kzs-Eg-MFa" secondAttribute="leading" id="daL-zf-CUK"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="countryCodeLabel" destination="3Be-ta-O5G" id="wYD-Hh-8z4"/>
+                        <outlet property="countryCodeView" destination="6S7-Mo-PXr" id="FbT-wu-dMC"/>
+                        <outlet property="phoneTextField" destination="2O8-tX-c04" id="PRq-R3-Uda"/>
+                        <outlet property="pinLabel" destination="HuZ-wo-p6G" id="Zi0-Sn-d6B"/>
+                        <outlet property="pinTextField" destination="VfJ-W4-E85" id="wiQ-L2-ikT"/>
+                        <outlet property="subtitleLabel" destination="2wq-y4-YBa" id="lOG-UY-UHz"/>
+                        <outlet property="titleLabel" destination="b3m-IF-V1T" id="fSE-pc-MUU"/>
+                        <outlet property="topStackView" destination="hO0-pe-IWF" id="vRv-7R-Lo2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LHu-pP-uXF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-682" y="188"/>
+        </scene>
+        <!--Account Confirmation Controller-->
+        <scene sceneID="Bjw-Dt-SqY">
+            <objects>
+                <viewController storyboardIdentifier="AccountConfirmationController" id="rnt-Cf-ZFg" customClass="AccountConfirmationController" customModule="DeliPollo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="avy-LQ-X8p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_lolo_logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="L73-Ot-Ej2">
+                                <rect key="frame" x="67.5" y="72" width="240" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Bg7-IZ-cpZ"/>
+                                    <constraint firstAttribute="width" constant="240" id="spO-sx-dvj"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="0NW-Eo-ZCn">
+                                <rect key="frame" x="36" y="547" width="303" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5G0-D0-pYZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="8Ji-gr-hCV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BloggerSans-Bold" family="Blogger Sans" pointSize="24"/>
+                                        <state key="normal" title="ingresa">
+                                            <color key="titleColor" name="loloBlue"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="enterButtonTapped:" destination="rnt-Cf-ZFg" eventType="touchUpInside" id="c2m-NS-k74"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡tu cuenta ha sido creada!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Z6-Nq-Zaw">
+                                <rect key="frame" x="24" y="293.5" width="327" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Mzx-el-fdE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BloggerSans-Bold" family="Blogger Sans" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i9a-ZO-UV0"/>
+                        <color key="backgroundColor" name="loloBlue"/>
+                        <constraints>
+                            <constraint firstItem="L73-Ot-Ej2" firstAttribute="top" secondItem="i9a-ZO-UV0" secondAttribute="top" constant="72" id="1m3-UG-apB"/>
+                            <constraint firstItem="i9a-ZO-UV0" firstAttribute="trailing" secondItem="3Z6-Nq-Zaw" secondAttribute="trailing" constant="24" id="G7j-Ir-yjo"/>
+                            <constraint firstItem="i9a-ZO-UV0" firstAttribute="bottom" secondItem="0NW-Eo-ZCn" secondAttribute="bottom" constant="60" id="Gng-Mk-JwN"/>
+                            <constraint firstItem="i9a-ZO-UV0" firstAttribute="trailing" secondItem="0NW-Eo-ZCn" secondAttribute="trailing" constant="36" id="L8k-bP-GVc"/>
+                            <constraint firstItem="0NW-Eo-ZCn" firstAttribute="leading" secondItem="i9a-ZO-UV0" secondAttribute="leading" constant="36" id="U2g-Hr-Cw5"/>
+                            <constraint firstItem="3Z6-Nq-Zaw" firstAttribute="leading" secondItem="i9a-ZO-UV0" secondAttribute="leading" constant="24" id="eeg-8N-V4f"/>
+                            <constraint firstItem="3Z6-Nq-Zaw" firstAttribute="centerY" secondItem="avy-LQ-X8p" secondAttribute="centerY" id="gPv-MB-LoK"/>
+                            <constraint firstItem="L73-Ot-Ej2" firstAttribute="centerX" secondItem="avy-LQ-X8p" secondAttribute="centerX" id="vO7-9g-kJk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGf-2y-5au" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2624.8000000000002" y="188.45577211394306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_arrow_down" width="31" height="18"/>
+        <image name="img_background" width="728" height="1280"/>
+        <image name="img_lolo_logo" width="848" height="481"/>
+        <image name="img_lolo_logo_white" width="1168" height="662"/>
+        <namedColor name="loloBlue">
+            <color red="0.28627450980392155" green="0.70196078431372544" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="loloGray">
+            <color red="0.54509803921568623" green="0.54509803921568623" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
